@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 26 Oct, 2020 10:12:49 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.Schedule" table="SCHEDULE">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="clientid" type="java.lang.String">
+            <column name="CLIENTID" />
+        </property>
+        <property name="assignedto" type="java.lang.String">
+            <column name="ASSIGNEDTO" />
+        </property>
+        <property name="fromdate" type="java.lang.String">
+            <column name="FROMDATE" />
+        </property>
+        <property name="todate" type="java.lang.String">
+            <column name="TODATE" />
+        </property>
+        <property name="amount" type="java.lang.String">
+            <column name="AMOUNT" />
+        </property>
+        <property name="paymentstatus" type="java.lang.String">
+            <column name="PAYMENTSTATUS" />
+        </property>
+    </class>
+</hibernate-mapping>
